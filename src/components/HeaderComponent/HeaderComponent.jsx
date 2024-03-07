@@ -1,8 +1,8 @@
 import React from 'react'
 import {Col} from 'antd'
 import { WrapperContextAccount, WrapperContextHeader, WrapperHeader, WrapperHeaderAccount } from './style'
-import Search from 'antd/lib/transfer/search'
 import {UserOutlined, CaretDownOutlined, ShoppingCartOutlined} from '@ant-design/icons'
+import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch'
 
 export default function HeaderComponent() {
   return (
@@ -12,9 +12,13 @@ export default function HeaderComponent() {
           <WrapperContextHeader>MERN E-COMMERCE</WrapperContextHeader>
         </Col>
         <Col span={12}>
-          <Search placeholder="input search text" enterButton />
+          <ButtonInputSearch 
+            size="large"
+            placeholder="input search text" 
+            textButton="Seach"
+            bordered={false} />
         </Col>
-        <Col span={6} style={{display: 'flex', gap: '20px'}}>
+        <Col span={6} style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
           <WrapperHeaderAccount>
             <UserOutlined style={{fontSize: '30px'}}/>
             <WrapperContextAccount>
