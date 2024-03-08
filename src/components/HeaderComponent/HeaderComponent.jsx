@@ -14,9 +14,9 @@ export default function HeaderComponent() {
         <Col span={12}>
           <ButtonInputSearch 
             size="large"
-            placeholder="input search text" 
+            bordered={false}
             textButton="Seach"
-            bordered={false} />
+            placeholder="input search text" />
         </Col>
         <Col span={6} style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
           <WrapperHeaderAccount>
