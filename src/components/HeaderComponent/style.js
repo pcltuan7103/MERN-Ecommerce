@@ -5,6 +5,8 @@ export const WrapperHeader = styled(Row)({
     padding: '10px 120px',
     background: 'rgb(26, 148, 255)',
     alignItems: 'center',
+    gap: '16px',
+    flexWrap: 'nowrap'
 })
 
 export const WrapperContextHeader = styled.span({
@@ -23,5 +25,6 @@ export const WrapperHeaderAccount = styled.div({
 
 export const WrapperContextAccount = styled.span({
     color: '#fff',
-    fontSize: '12px'
+    fontSize: '12px',
+    whiteSpace: 'nowrap'
 })
