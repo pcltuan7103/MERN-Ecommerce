@@ -6,6 +6,7 @@ import slide1 from '../../assets/images/slide-1.webp'
 import slide2 from '../../assets/images/slide-2.webp'
 import slide3 from '../../assets/images/slide-3.webp'
 import CardComponent from '../../components/CardComponent/CardComponent'
+import NavbarComponent from '../../components/NavbarComponent/NavbarComponent'
 
 export default function HomePage() {
   const arr = ['TV', 'tu lanh']
@@ -25,6 +26,7 @@ export default function HomePage() {
         <div style={{display: 'flex', marginTop: '20px', alignItems: 'center', gap: '20px'}}>
           <CardComponent />
         </div>
+        <NavbarComponent/>
       </div>
     </div>
   )
