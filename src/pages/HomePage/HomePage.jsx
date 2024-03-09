@@ -5,6 +5,7 @@ import SlideComponent from '../../components/SlideComponent/SlideComponent'
 import slide1 from '../../assets/images/slide-1.webp'
 import slide2 from '../../assets/images/slide-2.webp'
 import slide3 from '../../assets/images/slide-3.webp'
+import CardComponent from '../../components/CardComponent/CardComponent'
 
 export default function HomePage() {
   const arr = ['TV', 'tu lanh']
@@ -19,8 +20,11 @@ export default function HomePage() {
           })}
         </WrapperType>
       </div>
-      <div id='container' style={{backgroundColor: '#efefef', padding: '0 120px'}}>
+      <div id='container' style={{backgroundColor: '#efefef', padding: '0 120px', height: '1000px'}}>
         <SlideComponent arrImage={[slide1, slide2, slide3]}/>
+        <div style={{display: 'flex', marginTop: '20px', alignItems: 'center', gap: '20px'}}>
+          <CardComponent />
+        </div>
       </div>
     </div>
   )
