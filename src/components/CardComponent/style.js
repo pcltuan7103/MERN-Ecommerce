@@ -36,3 +36,9 @@ export const WrapperDiscountText = styled.span({
     fontSize: '12px',
     fontWeight: '500'
 })
+
+export const WrapperStyleTextSold = styled.span({
+    fontSize: '15px',
+    lineHeight: '24px',
+    color: 'rgb(120, 120, 120)'
+})
