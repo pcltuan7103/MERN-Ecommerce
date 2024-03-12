@@ -20,5 +20,6 @@ export const WrapperContainerRight = styled.div({
 
 export const WrapperTextLight = styled.span({
     color: 'rgb(13, 92, 182)',
-    fontSize: '13px'
+    fontSize: '13px',
+    cursor: 'pointer'
 })

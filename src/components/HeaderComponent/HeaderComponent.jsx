@@ -6,19 +6,19 @@ import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch'
 
 export default function HeaderComponent() {
   return (
-    <div>
+    <div style={{width: '100%', display: 'flex', backgroundColor: 'rgb(26, 148, 255)', justifyContent: 'center',}}>
       <WrapperHeader>
-        <Col span={6}>
+        <Col span={5}>
           <WrapperContextHeader>MERN E-COMMERCE</WrapperContextHeader>
         </Col>
-        <Col span={12}>
+        <Col span={13}>
           <ButtonInputSearch 
             size="large"
             bordered={false}
             textButton="Seach"
             placeholder="input search text" />
         </Col>
-        <Col span={6} style={{display: 'flex', gap: '20px', alignItems: 'center'}}>
+        <Col span={6} style={{display: 'flex', gap: '54px', alignItems: 'center'}}>
           <WrapperHeaderAccount>
             <UserOutlined style={{fontSize: '30px'}}/>
             <WrapperContextAccount>

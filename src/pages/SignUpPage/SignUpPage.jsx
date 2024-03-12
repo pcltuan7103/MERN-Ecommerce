@@ -6,6 +6,7 @@ import {
 import InputForm from "../../components/InputForm/InputForm";
 import ButtonComponent from "../../components/ButtonComponent/ButtonComponent";
 import { Image } from "antd";
+import { WrapperInputPassStyle } from "../../components/InputForm/style";
 
 const SignUpPage = () => {
   return (
@@ -34,8 +35,8 @@ const SignUpPage = () => {
             style={{ marginBottom: "10px" }}
             placeholder="abcdef@gmail.com"
           />
-          <InputForm placeholder="password" style={{ marginBottom: "10px" }} />
-          <InputForm placeholder="Confirm password" />
+          <WrapperInputPassStyle placeholder="password" style={{ marginBottom: "10px" }} />
+          <WrapperInputPassStyle placeholder="Confirm password" />
           <ButtonComponent
             size={40}
             styleButton={{

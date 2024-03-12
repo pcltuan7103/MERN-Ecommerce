@@ -6,7 +6,6 @@ export const WrapperType = styled.div({
     alignItems: 'center',
     gap: '24px',
     justifyContent: 'flex-start',
-    borderBottom: '1px solid #ddd',
     height: '45px'
 })
 
@@ -22,8 +21,7 @@ export const WrapperButtonViewMore = styled(ButtonComponent)({
 
 export const WrapperProduct = styled.div({
     display: 'flex',
-    justifyContent: 'center',
-    gap: '15px',
+    gap: '14px',
     flexWrap: 'wrap',
     marginTop: '20px'
 })

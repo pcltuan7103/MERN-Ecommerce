@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import {Row} from 'antd'
 
 export const WrapperHeader = styled(Row)({
-    padding: '10px 120px',
+    width: '1270px',
+    padding: '10px 0',
     background: 'rgb(26, 148, 255)',
     alignItems: 'center',
     gap: '16px',

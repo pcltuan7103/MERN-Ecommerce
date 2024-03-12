@@ -3,8 +3,7 @@ import {Col} from 'antd'
 
 export const WrapperProduct = styled.div({
     display: 'flex',
-    justifyContent: 'center',
-    gap: '15px',
+    gap: '12px',
     flexWrap: 'wrap',
     marginTop: '20px'
 })
@@ -15,5 +14,6 @@ export const WrapperNavbar = styled(Col)({
     padding: '10px', 
     borderRadius: '4px',
     height: 'fit-content',
-    marginTop: '20px'
+    marginTop: '20px',
+    width: '200px'
 })
