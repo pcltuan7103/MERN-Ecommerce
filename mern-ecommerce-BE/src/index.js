@@ -1,6 +1,8 @@
 const express = require("express");
 const dotenv = require('dotenv');
 const mongoose = require("mongoose");
+const routes = require("./routes/index.js");
+const bodyParser = require("body-parser");
 dotenv.config()
 
 const app = express();
@@ -10,7 +12,11 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-mongoose.connect(`mongodb+srv://tuanpcl7103:${process.env.MONGO_DB}@cluster0.yxd7aha.mongodb.net/`)
+app.use(bodyParser.json())
+
+routes(app)
+
+mongoose.connect(`${process.env.MONGO_DB}`)
     .then(() => {
         console.log("connect Db success!")
     })
